@@ -1,0 +1,54 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-image: url('../images/e8B1phX.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  }
+
+.title{
+  text-align: center;
+  font-family: 'Alex Brush', cursive;
+  font-size: 80px;
+}
+
+.main{
+  background-color:rgba(211,211,211,0.5);
+  color: black;
+}
+.question{
+  margin:40px;
+}
+
+h2{
+  padding:10px;
+}
+
+#timerDisplay{
+  margin-left: 20px;
+  font-family: Arial,Helvitica,sans-serif;
+}
+
+.answers{
+  background-color:rgba(175,175,175,0.5);
+  color: black;
+  margin:10px;
+  padding:10px;
+}
+
+.answers:hover { 
+    background-color: rgba(200,200,00,.5);
+  }
+
+.btn-primary {
+    color: rgba(0,0,0,1);
+    background-color: rgba(255,255,255,.5);
+    border-color: #rgba(255,255,255,.5); /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: rgba(175,175,175,.5);
+    border-color: rgba(175,175,175,.5); /*set the color you want here*/
