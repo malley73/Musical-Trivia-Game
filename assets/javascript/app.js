@@ -34,24 +34,24 @@ $(document).ready(function() {
   //Build Start Page
   // build Jumbotron
   function startPage() {
-      $(".start").click(function() {
-    questionPage();
-  });
+    $(".start").click(function() {
+      questionPage();
+    });
     $(".container").empty();
     var $jumbo = $("<div class='jumbotron'><h1>Welcome to a Trivia Game</h1><h1>FOR YOUR EARS</h1><p>Listen to the following 30 second clips of classical orchestral music from the silver screen. Name, not the movie from wence it came as that will be obvious, but the composer of the arrangement.</p><p></p><p>Click Start to begin...</p></div>");
     $(".container").append($jumbo);
-  }
-  timer; //Interval Test
-  counter = 30;
-  answer = 0;
-  dataset = 7;
-  wrongDisplayAnswers = ["", "", ""];
-  correctDiv = 0;
-  playerCorrect = 0;
-  playerWrong = 0;
-  playerTimeOut = 0;
-  questionCounter = 0;
 
+    timer; //Interval Test
+    counter = 30;
+    answer = 0;
+    dataset = 7;
+    wrongDisplayAnswers = ["", "", ""];
+    correctDiv = 0;
+    playerCorrect = 0;
+    playerWrong = 0;
+    playerTimeOut = 0;
+    questionCounter = 0;
+  }
   //Build Question Page
   // insert Divs
   function questionPage() {
@@ -184,7 +184,7 @@ $(document).ready(function() {
     var $jumbo = $("<div class='jumbotron'><h1>Final Score</h1><p>Correct Answers: " + playerCorrect + "</p><p>Wrong Answers: " + playerWrong + "</p><p> Unanswered: " + playerTimeOut + "</p></div>");
     $(".container").append($jumbo);
 
-    setTimeout(startPage,10000);
+    setTimeout(startPage, 10000);
   }
 
 });
