@@ -34,14 +34,24 @@ $(document).ready(function() {
   //Build Start Page
   // build Jumbotron
   function startPage() {
+    addEventListenerToStartButton();
+    createJumbotronDivStart();
+    resetVariablesValues();
+  }
+
+  function addEventListenerToStartButton() {
     $(".start").click(function() {
       questionPage();
     });
+  }
+
+  function createJumbotronDivStart() {
     $(".container").empty();
     var $jumbo = $("<div class='jumbotron'><h1>Welcome to a Trivia Game</h1><h1>FOR YOUR EARS</h1><p>Listen to the following 30 second clips of classical orchestral music from the silver screen. Name, not the movie from wence it came as that will be obvious, but the composer of the arrangement.</p><p></p><p>Click Start to begin...</p></div>");
     $(".container").append($jumbo);
+  }
 
-    timer; //Interval Test
+  function resetVariablesValues() {
     counter = 30;
     answer = 0;
     dataset = 7;
